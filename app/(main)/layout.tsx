@@ -1,8 +1,10 @@
-import { Nav } from "@components/nav";
+import { MainNav } from "@components/main-nav";
+
+import { siteConfig } from "@config/site";
 export default function PageLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    return <Nav />;
+  return <MainNav items={siteConfig.mainNav}>{children}</MainNav>;
 }

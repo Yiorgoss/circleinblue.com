@@ -1,9 +1,10 @@
-import { X, type LucideIcon, type LucideProps } from "lucide-react";
+import { X, AlignRight, type LucideIcon, type LucideProps } from "lucide-react";
 
 export type Icon = LucideIcon;
 
 export const Icons = {
     close: X,
+    alignRight: AlignRight,
     nextjs: (props: LucideProps) => (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
             <path

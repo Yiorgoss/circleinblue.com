@@ -1,10 +1,17 @@
 import { MainNav } from "@components/main-nav";
+import { Footer } from "@components/footer";
 
-import { siteConfig } from "@config/site";
+import { mainNav, footer } from "@config/site";
 export default function PageLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <MainNav items={siteConfig.mainNav}>{children}</MainNav>;
+  return (
+    <div className="overflow-hidden">
+      <MainNav items={mainNav} />
+      {children}
+      <Footer items={footer} />
+    </div>
+  );
 }

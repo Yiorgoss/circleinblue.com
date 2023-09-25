@@ -1,19 +1,39 @@
-"use client";
-import { useProducts } from "medusa-react";
+import { Suspense } from "react";
 
-import { Button } from "@components/ui/button";
+import ImageTextSplit from "@components/image-text-split";
+import FeaturedList from "@components/featured-list";
+import LetsChat from "@components/lets-chat";
+import PartnerGalleries from "@components/partner-galleries";
 
-const Home = () => {
-    const { products } = useProducts({
-        expand: "variants",
-    });
+import { Skeleton } from "@components/ui/skeleton";
 
-    console.log(products);
-    return (
-        <>
-            <div>abc</div>
-        </>
-    );
-};
+import { getFeaturedProducts } from "@lib/medusa";
 
-export default Home;
+import { Artist } from "types";
+import mockArtists from "@data/mock-artist";
+
+export default function Home() {
+  const featuredArtists: Promise<Artist[]> = new Promise((res, _) => {
+    res(mockArtists);
+  });
+
+  const partnerGalleries = [
+    "https://placebear.com/g/400/300",
+    "https://placebear.com/g/400/500",
+    "https://placebear.com/g/300/400",
+    "https://placebear.com/g/500/400",
+  ];
+
+  return (
+    <div className="mx-auto">
+      <ImageTextSplit />
+      <div className="my-10">
+        <Suspense fallback={<p>Loading</p>}>
+          <FeaturedList dataPromise={featuredArtists} />
+        </Suspense>
+      </div>
+      <LetsChat />
+      <PartnerGalleries partners={partnerGalleries} />
+    </div>
+  );
+}

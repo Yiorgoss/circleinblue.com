@@ -15,7 +15,7 @@ export const sitemap = {
   termsAndConditions: "/terms-and-conditions",
 };
 export const mainNav = [
-  { title: "Home Page", href: sitemap.home },
+  { title: "Home", href: sitemap.home },
   { title: "Our Artists", href: sitemap.artists },
   { title: "Our Galleries", href: sitemap.galleries },
   { title: "Our Story", href: sitemap.aboutUs },

@@ -42,7 +42,7 @@ export default function GalleryPartners() {
       </h1>
       <div className="my-10 ">
         {galleries.map((gallery, i) => (
-          <div className="my-10 py-6">
+          <div className="my-10 py-6" key={i}>
             <GalleryShowcase left={i % 2 == 0} gallery={gallery} />
           </div>
         ))}

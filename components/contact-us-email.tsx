@@ -23,14 +23,14 @@ const EmailSection = ({ name, email }: { name: string; email: string }) => {
   if (name == "artists") {
     children = (
       <div className="text-lg ">
-        "To become part of our network of artists, reach us at"
+        To become part of our network of artists, reach us at
       </div>
     );
   }
   if (name == "partnerships") {
     children = (
       <div className="text-center text-lg">
-        "To express your interest as a Partner, or Gallery, reach us at"
+        To express your interest as a Partner, or Gallery, reach us at
       </div>
     );
   }
@@ -45,7 +45,7 @@ const EmailSection = ({ name, email }: { name: string; email: string }) => {
       </div>
     );
   }
-  return <EmailText email={email} children={children} />;
+  return <EmailText email={email}>{children}</EmailText>;
 };
 
 export default function ContactUsEmail({

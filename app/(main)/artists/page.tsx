@@ -1,7 +1,7 @@
 import GridLayout from "@components/grid-layout";
 import data from "@data/mock-artist";
 
-export default function () {
+export default function Artists() {
   return (
     <div className="mt-20">
       <div className="font-xl border-y border-primary bg-secondary-secondary pb-14 pt-10 text-xl">

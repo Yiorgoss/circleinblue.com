@@ -21,7 +21,7 @@ export default function LetsChat() {
           </p>
           <Link href={sitemap.contactUs}>
             <Button variant="outline" className="mt-8" size="xl2">
-              Let's Chat
+              Let&lsquo;s Chat
             </Button>
           </Link>
         </div>

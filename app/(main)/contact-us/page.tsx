@@ -10,7 +10,7 @@ export default function ContactUs() {
       <div className="grid h-[600px] w-full grid-cols-2 border-b border-primary">
         <div className="flex flex-col justify-around bg-blue-800">
           <h3 className="mx-10 text-center text-6xl">
-            We'd love to hear from you
+            We&lsquo;d love to hear from you
           </h3>
           <div className="flex justify-center">
             <div className=" aspect-square w-full rounded-full border"></div>

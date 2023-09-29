@@ -11,7 +11,10 @@ export default function WhoWeAre() {
           {Array(10)
             .fill(0)
             .map((_, i) => (
-              <div className=" border-r-[1px] border-primary opacity-10 last:border-0"></div>
+              <div
+                className=" border-r-[1px] border-primary opacity-10 last:border-0"
+                key={i}
+              ></div>
             ))}
         </div>
         <div className="absolute inset-0 flex flex-col items-center justify-center">

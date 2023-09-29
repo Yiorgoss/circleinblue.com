@@ -14,6 +14,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": ".",
     "plugins": [
       {
         "name": "next"
@@ -24,7 +25,8 @@
       "@data/*": ["data/*"],
       "@components/*": ["components/*"],
       "@config/*": ["config/*"],
-      "@pages/*": ["pages/*"]
+      "@pages/*": ["pages/*"],
+      "types": ["./types/index.d.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

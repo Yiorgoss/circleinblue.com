@@ -30,7 +30,7 @@ export default function GridLayout({ data }: { data: Artist[] }) {
   return (
     <div className="flex flex-wrap justify-around py-14">
       {data.map((item, i) => (
-        <div className="my-14 w-1/3 ">
+        <div className="my-14 w-1/3 " key={i}>
           <GridItem item={item} />
         </div>
       ))}

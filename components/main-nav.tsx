@@ -21,7 +21,9 @@ export function MainNav({ items }: { items: NavItem[] }) {
 
   return (
     <header className="flex w-screen flex-wrap justify-between border-b border-primary py-2">
-      <div className="my-auto ml-4 md:ml-16">Logo</div>
+      <div className="my-auto ml-4 md:ml-16">
+        <Link href="/">Logo</Link>
+      </div>
       <div className="my-auto">Circle In Blue</div>
 
       <Dialog open={menuOpen} onOpenChange={setMenuOpen}>
@@ -32,19 +34,26 @@ export function MainNav({ items }: { items: NavItem[] }) {
         </DialogTrigger>
         <DialogContent className="rounded-none bg-secondary-secondary p-0">
           <div className="flex flex-col">
-            <div className="h-20 border-b-2 border-l-2 border-r-2 border-primary"></div>
-            <div className="py-4 text-left ">
-              {items.map(({ title, href }, i) => (
-                <div
-                  className="py-3"
-                  onClick={() => setMenuOpen(false)}
-                  key={i}
-                >
-                  <CircularText>
-                    <Link href={href}>{title}</Link>
-                  </CircularText>
-                </div>
-              ))}
+            <div className="border-b-2 border-primary px-20">
+              <div className="h-20 border-l-2 border-r-2 border-primary"></div>
+            </div>
+            <div className="px-20">
+              <div className="flex-col items-center justify-center border-x-2 border-primary">
+                {items.map(({ title, href }, i) => (
+                  <div
+                    className="mx-auto w-fit py-3"
+                    onClick={() => setMenuOpen(false)}
+                    key={i}
+                  >
+                    <CircularText>
+                      <Link href={href}>{title}</Link>
+                    </CircularText>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="border-t-2 border-primary px-20">
+              <div className="h-20 border-l-2 border-r-2 border-primary"></div>
             </div>
           </div>
         </DialogContent>

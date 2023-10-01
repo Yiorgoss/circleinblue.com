@@ -5,9 +5,9 @@ import { Separator } from "@components/ui/separator";
 
 export default function WhoWeAre() {
   return (
-    <div className="w-full text-lg">
+    <div className="w-full">
       <div className="relative">
-        <div className="grid h-screen grid-cols-10">
+        <div className="grid h-[calc(100vh-100px)] grid-cols-10">
           {Array(10)
             .fill(0)
             .map((_, i) => (
@@ -28,6 +28,7 @@ export default function WhoWeAre() {
           </p>
         </div>
       </div>
+      <div className="h-16 border-t border-primary"></div>
       <div className="border-y border-primary bg-secondary-secondary py-20 text-center">
         <h2 className="text-5xl font-medium">Our Mission</h2>
         <p className="mx-auto mt-10 w-3/4 xl:w-[800px]">
@@ -38,7 +39,7 @@ export default function WhoWeAre() {
         </p>
       </div>
 
-      <div className="container flex items-center justify-center ">
+      <div className="container py-10 gap-x-16 flex items-center justify-center ">
         <p className="w-1/4 text-left">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -54,8 +55,9 @@ export default function WhoWeAre() {
             height={300}
             width={300}
           />
-          <h2 className="absolute top-0 ml-[-100px] text-5xl font-medium">
-            Our Founder
+          <h2 className="absolute top-[-50px] -left-6 text-5xl font-medium">
+            Our <br/>
+            Founder
           </h2>
         </div>
       </div>

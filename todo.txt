@@ -1,0 +1,15 @@
+  change blue color to that of teh footer
+  landing page first hero picture and side info fit whole page
+  button- maybe remove fill and add bold stroke instead over hover
+  join our community section- email in lower case
+  back to top button and arrow smaller
+  hamburger menu smaller
+  Terms & Conditions not and
+  Contact Us hover effect in menu goes under the frame
+  In Menu section you can't click on right half of text
+  In Our Story section make who we are whole page with top and bottom border
+  150F41 for Contact Us page
+  Contact Us Page right side- Space out paragraphs better
+  Maybe more height less width, make it fit whole page
+  Our Gallery Partners page- Borders all the way
+  Our Gallery Partners page- No fill in the pic and text, fill in small section in between each section

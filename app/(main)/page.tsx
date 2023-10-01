@@ -18,16 +18,18 @@ export default function Home() {
   });
 
   const partnerGalleries = [
-    "https://placebear.com/g/400/300",
-    "https://placebear.com/g/400/500",
-    "https://placebear.com/g/300/400",
-    "https://placebear.com/g/500/400",
+    "/images/landing-5.jpg",
+    "/images/gallery-1.jpg",
+    "/images/gallery-2.jpg",
+    "/images/gallery-3.jpg",
   ];
 
   return (
     <div className="mx-auto">
-      <ImageTextSplit />
-      <div className="my-10">
+      <div className="h-[calc(100vh-100px)] pb-20">
+        <ImageTextSplit />
+      </div>
+      <div className="">
         <Suspense fallback={<p>Loading</p>}>
           <FeaturedList dataPromise={featuredArtists} />
         </Suspense>

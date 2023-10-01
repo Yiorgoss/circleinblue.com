@@ -5,6 +5,7 @@ import { Playfair, } from 'next/font/google'
 
 const playfair = Playfair(
 {subsets:['latin'],
+
 variable:'--font-playfair'}
 )
 
@@ -16,9 +17,9 @@ export default function RootLayout({
 
   return (
     <html>
-      <body>
+      <body className="font-normal leading-loose text-xl tracking-wide">
         <Providers>
-          <main className={`${playfair.variable}`}>{children}</main>
+          <main className={` ${playfair.variable}`}>{children}</main>
         </Providers>
       </body>
     </html>

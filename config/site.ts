@@ -1,10 +1,11 @@
 export const siteConfig = {
-  name: "Skateshop13",
+  name: "Circle In Blue",
   description:
-    "An open source e-commerce skateshop build with everything new in Next.js 13.",
-  url: "https://skateshop.sadmn.com",
-  ogImage: "https://skateshop.sadmn.com/opengraph-image.png",
+    "Helping Artists connect with Collectors",
+  url: "https://www.circleinblue.com",
+  ogImage: "https://www.circleinblue.com/opengraph-image.png",
 };
+
 export const sitemap = {
   home: "/",
   artists: "/artists",
@@ -23,12 +24,12 @@ export const mainNav = [
 ];
 export const footer = {
   socials: [
-    { title: "linkedin", href: "linkedin-url" },
     { title: "instagram", href: "instagram-url" },
+    { title: "linkedin", href: "linkedin-url" },
   ],
   nav: [
     { title: "Privacy", href: sitemap.privacy },
-    { title: "Terms And Condition", href: sitemap.termsAndConditions },
+    { title: "Terms & Conditions", href: sitemap.termsAndConditions },
   ],
 };
 export const contactEmails = {

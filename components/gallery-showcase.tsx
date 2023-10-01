@@ -13,7 +13,7 @@ export default function GalleryShowcase({
     <div
       className={`${
         left && "flex-row-reverse"
-      } container flex h-[400px] w-full items-center justify-center border-y border-primary bg-secondary-secondary`}
+      } flex h-[400px] w-full items-center justify-center border-y border-primary bg-background`}
     >
       <Image
         className="h-full w-1/3 p-10"

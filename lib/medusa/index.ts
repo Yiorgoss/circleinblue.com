@@ -89,7 +89,7 @@ export async function getProducts(): Promise<MedusaProduct[]> {
 export async function getFeaturedProducts(): Promise<MedusaProduct[]> {
   const res = await medusaRequest({
     method: "GET",
-    path: `/products/featured`,
+    path: `/store`,
   });
 
   if (!res) {

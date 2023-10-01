@@ -1,15 +1,22 @@
-import Link from "next/link";
 import { Icons } from "@components/icons";
+import Link from "next/link";
 
 interface EmailTextProps extends React.HTMLAttributes<HTMLDivElement> {
   email: string;
+  float: string;
 }
-const EmailText = ({ children, email }: EmailTextProps) => {
+
+const EmailText = ({ children,float, email }: EmailTextProps) => {
+  const floatClass = {
+    'left':"justify-left",
+    'right': 'justify-end',
+    'center': 'justify-center'
+  }
   return (
-    <div className="">
+    <div >
       {children}
       <Link
-        className="flex items-center justify-center"
+        className={`flex items-center ${floatClass[float]}`}
         href={`mailto:${email}`}
       >
         <Icons.mail className="k-8 mr-2 h-8" />
@@ -18,7 +25,7 @@ const EmailText = ({ children, email }: EmailTextProps) => {
     </div>
   );
 };
-const EmailSection = ({ name, email }: { name: string; email: string }) => {
+const EmailSection = ({ name, email, float }: { name: string; email: string; float: string }) => {
   let children;
   if (name == "artists") {
     children = (
@@ -45,19 +52,22 @@ const EmailSection = ({ name, email }: { name: string; email: string }) => {
       </div>
     );
   }
-  return <EmailText email={email}>{children}</EmailText>;
+  return <EmailText email={email} float={float}>{children}</EmailText>;
 };
+
+const floatLookup = ['left', 'right', 'center']
 
 export default function ContactUsEmail({
   emails,
 }: {
   emails: { [emails: string]: string };
 }) {
+
   return (
     <div className="flex flex-col justify-center px-10">
       {Object.entries(emails).map(([name, email], i) => (
-        <div className="mt-10" key={i}>
-          <EmailSection name={name} email={email} />
+        <div className="py-10" key={i}>
+          <EmailSection name={name} float={floatLookup[i]} email={email} />
         </div>
       ))}
     </div>

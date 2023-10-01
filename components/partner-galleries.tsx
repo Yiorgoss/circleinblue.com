@@ -15,8 +15,8 @@ export default function PartnerGalleries({ partners }: { partners: string[] }) {
       <div className="h-[500px]">
         <Carousel data={partners} />
       </div>
-      <div className=" align-center flex flex-col justify-end bg-secondary-secondary pb-12">
-        <p className="p-10 px-14 text-xl font-light">
+      <div className="align-center flex flex-col justify-end bg-secondary-secondary pb-12">
+        <p className="p-10 px-14 font-light">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

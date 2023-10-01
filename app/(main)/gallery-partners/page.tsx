@@ -40,10 +40,10 @@ export default function GalleryPartners() {
       <h1 className="border-y border-primary bg-secondary-secondary py-10 text-center text-5xl">
         Our Gallery Partners
       </h1>
-      <div className="my-10 ">
+      <div className="py-10 bg-secondary-secondary ">
         {galleries.map((gallery, i) => (
-          <div className="my-10 py-6" key={i}>
-            <GalleryShowcase left={i % 2 == 0} gallery={gallery} />
+          <div className="py-10 py-6" key={i}>
+            <GalleryShowcase left={i % 2 == 1} gallery={gallery} />
           </div>
         ))}
       </div>

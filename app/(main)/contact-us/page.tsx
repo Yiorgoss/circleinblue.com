@@ -8,11 +8,11 @@ export default function ContactUs() {
         Contact Us
       </h1>
       <div className="grid h-[600px] w-full grid-cols-2 border-b border-primary">
-        <div className="flex flex-col justify-around bg-blue-800">
-          <h3 className="mx-10 text-center text-6xl">
+        <div className="flex flex-col justify-around bg-[#150F41]">
+          <h3 className="mx-10 text-center text-6xl text-secondary">
             We&lsquo;d love to hear from you
           </h3>
-          <div className="flex justify-center">
+          <div className="flex justify-center border-secondary">
             <div className=" aspect-square w-full rounded-full border"></div>
             <div className="ml-[-15%] aspect-square w-full rounded-full border border-dashed"></div>
             <div className="ml-[-15%] aspect-square w-full rounded-full border"></div>

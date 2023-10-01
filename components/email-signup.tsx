@@ -9,7 +9,7 @@ export function EmailSignup() {
       <div className="items-between flex w-full max-w-[50%] justify-between space-x-2 border-b border-primary pb-2 pt-10">
         <input
           type="email"
-          placeholder="Email"
+          placeholder="email"
           className="w-full bg-inherit focus:border-0 focus:outline-0 focus:placeholder:text-transparent"
         />
         <Button type="submit" variant="ghost">

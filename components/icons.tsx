@@ -5,6 +5,8 @@ import {
   ArrowUp,
   ArrowRight,
   Mail,
+  Linkedin,
+  Instagram,
   type LucideIcon,
   type LucideProps,
 } from "lucide-react";
@@ -12,6 +14,8 @@ import {
 export type Icon = LucideIcon;
 
 export const Icons = {
+  instagram: Instagram,
+  linkedIn: Linkedin,
   close: X,
   menu: Menu,
   arrowLeft: ArrowLeft,

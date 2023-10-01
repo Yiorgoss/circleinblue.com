@@ -3,6 +3,7 @@
 import * as React from "react";
 
 import Link from "next/link";
+import Image from "next/image"
 
 import { NavItem } from "types";
 import { CircularText } from "@components/circular-text";
@@ -20,16 +21,16 @@ export function MainNav({ items }: { items: NavItem[] }) {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   return (
-    <header className="flex w-screen flex-wrap justify-between border-b border-primary py-2">
-      <div className="my-auto ml-4 md:ml-16">
-        <Link href="/">Logo</Link>
+    <header className="flex w-screen flex-wrap h-[100px] justify-between border-b border-primary py-2">
+      <div className="my-auto ml-4 md:ml-16 flex justify-center items-center ">
+        <Link href="/"><Image src="/images/logo.png" alt="circle in blue logo" height={80} width={80} /></Link>
       </div>
-      <div className="my-auto">Circle In Blue</div>
+      <div className="my-auto font-black">Circle In Blue</div>
 
       <Dialog open={menuOpen} onOpenChange={setMenuOpen}>
         <DialogTrigger className="mr-4 md:mr-14">
           <div className="my-auto " onClick={() => setMenuOpen(!menuOpen)}>
-            <Icons.menu className="h-[60px] w-[60px] stroke-1" />
+            <Icons.menu className="h-[40px] w-[40px] stroke-1" />
           </div>
         </DialogTrigger>
         <DialogContent className="rounded-none bg-secondary-secondary p-0">
@@ -38,16 +39,18 @@ export function MainNav({ items }: { items: NavItem[] }) {
               <div className="h-20 border-l-2 border-r-2 border-primary"></div>
             </div>
             <div className="px-20">
-              <div className="flex-col items-center justify-center border-x-2 border-primary">
+              <div className="flex-col py-5 items-center justify-center border-x-2 border-primary">
                 {items.map(({ title, href }, i) => (
                   <div
                     className="mx-auto w-fit py-3"
                     onClick={() => setMenuOpen(false)}
                     key={i}
                   >
+                  <Link href={href}>
                     <CircularText>
-                      <Link href={href}>{title}</Link>
+                      {title}
                     </CircularText>
+                  </Link>
                   </div>
                 ))}
               </div>

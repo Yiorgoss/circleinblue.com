@@ -25,7 +25,7 @@ export function MainNav({ items }: { items: NavItem[] }) {
       <div className="my-auto ml-4 md:ml-16 flex justify-center items-center ">
         <Link href="/"><Image src="/images/logo.png" alt="circle in blue logo" height={80} width={80} /></Link>
       </div>
-      <div className="my-auto font-black">Circle In Blue</div>
+      <div className="my-auto text-3xl font-black">Circle In Blue</div>
 
       <Dialog open={menuOpen} onOpenChange={setMenuOpen}>
         <DialogTrigger className="mr-4 md:mr-14">

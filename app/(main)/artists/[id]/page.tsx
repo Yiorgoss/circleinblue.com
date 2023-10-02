@@ -26,7 +26,7 @@ export default function ArtistPage() {
       <div className="">
         <ArtistArtwork artwork={artist.artwork}/>
       </div>
-      <p className="text-2xl tracking-wider border-t text-center border-primary py-24 mx-auto">"Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat"</p>
+      <p className="text-2xl tracking-wider border-t text-center border-primary py-24 mx-auto">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat</p>
     </div>
   );
 }

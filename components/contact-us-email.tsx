@@ -6,17 +6,17 @@ interface EmailTextProps extends React.HTMLAttributes<HTMLDivElement> {
   float: string;
 }
 
-const EmailText = ({ children,float, email }: EmailTextProps) => {
-  const floatClass = {
-    'left':"justify-left",
-    'right': 'justify-end',
-    'center': 'justify-center'
-  }
+const EmailText = ({ children, float, email }: EmailTextProps) => {
+  const floatClass = new Map<string, string>([
+    ["left", "justify-left"],
+    ["right", "justify-end"],
+    ["center", "justify-center"],
+  ]);
   return (
-    <div >
+    <div>
       {children}
       <Link
-        className={`flex items-center ${floatClass[float]}`}
+        className={`flex items-center ${floatClass.get(float)}`}
         href={`mailto:${email}`}
       >
         <Icons.mail className="k-8 mr-2 h-8" />
@@ -25,7 +25,15 @@ const EmailText = ({ children,float, email }: EmailTextProps) => {
     </div>
   );
 };
-const EmailSection = ({ name, email, float }: { name: string; email: string; float: string }) => {
+const EmailSection = ({
+  name,
+  email,
+  float,
+}: {
+  name: string;
+  email: string;
+  float: string;
+}) => {
   let children;
   if (name == "artists") {
     children = (
@@ -47,22 +55,25 @@ const EmailSection = ({ name, email, float }: { name: string; email: string; flo
         <p className="mt-2 text-xl">
           Interested in purchasing a piece of artwork?
         </p>
-        <p className="my-2">Let’s set up an appointment via phone, </p>
+        <p className="my-2">Let’s set up an appointment via phone,</p>
         <p>zoom or even in person at</p>
       </div>
     );
   }
-  return <EmailText email={email} float={float}>{children}</EmailText>;
+  return (
+    <EmailText email={email} float={float}>
+      {children}
+    </EmailText>
+  );
 };
 
-const floatLookup = ['left', 'right', 'center']
+const floatLookup = ["left", "right", "center"];
 
 export default function ContactUsEmail({
   emails,
 }: {
   emails: { [emails: string]: string };
 }) {
-
   return (
     <div className="flex flex-col justify-center px-10">
       {Object.entries(emails).map(([name, email], i) => (

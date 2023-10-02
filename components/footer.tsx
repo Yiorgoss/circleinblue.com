@@ -3,14 +3,13 @@
 import Link from "next/link";
 
 import DoubleDivider from "@components/ui/double-divider";
-import { Separator } from "@components/ui/separator";
 import { EmailSignup } from "@components/email-signup";
 import { Icons } from "@components/icons";
 
-const SocialIcon = {
-  'instagram':<Icons.instagram className="h-5 w-5"/>,
-  'linkedin': <Icons.linkedIn className="h-5 w-5"/>
-}
+const SocialIcon: Map<string, React.JSX.Element> = new Map([
+  ["instagram", <Icons.instagram className="h-5 w-5" key={'ig'}/>],
+  ["linkedin", <Icons.linkedIn className="h-5 w-5" key={'li'}/>],
+]);
 const LeftSide = ({
   socials,
   nav,
@@ -19,7 +18,7 @@ const LeftSide = ({
   nav: { title: string; href: string }[];
 }) => {
   return (
-    <div className="grid px-10 grid-cols-2 bg-secondary-secondary pt-10">
+    <div className="grid grid-cols-2 bg-secondary-secondary px-10 pt-10">
       <div className="mx-auto flex flex-col">
         <h2 className="w-fit border-b border-primary px-3 py-2 text-lg font-medium">
           Find Us
@@ -27,9 +26,7 @@ const LeftSide = ({
         <ul className="mt-3">
           {socials.map(({ title, href }, i) => (
             <li className="pt-4" key={i}>
-              <Link href={href}>
-                {SocialIcon[title]}
-              </Link>
+              <Link href={href}>{SocialIcon.get(title)}</Link>
             </li>
           ))}
         </ul>

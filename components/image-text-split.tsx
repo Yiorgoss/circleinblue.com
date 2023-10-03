@@ -8,17 +8,17 @@ import { sitemap } from "@config/site";
 
 export default function ImageTextSplit() {
   return (
-    <div className="mt-10 h-full w-full flex-col justify-center border-y-[1px] border-primary md:flex ">
-      <div className="relative m-0 h-full w-full overflow-hidden p-0 md:ml-10 md:w-3/4 md:pr-6">
+    <div className="mt-10 h-full w-full flex-col md:flex-row justify-center border-y-[1px] border-primary md:flex ">
+      <div className="container mx-auto relative m-0 h-full w-full overflow-hidden p-0 md:pl-10 md:w-2/3 md:pr-6">
         <Image
-          className="w-screen object-cover"
+          className="w-full h-full object-cover"
           width={600}
           height={300}
           src="/images/landing-1.jpg"
           alt="none"
         />
       </div>
-      <div className="1/4 flex bg-secondary-secondary">
+      <div className="w-full md:w-1/3 flex bg-secondary-secondary">
         <DoubleDivider axis="vertical" />
         <div className="flex flex-col justify-center p-5">
           <div className="py-10 text-center text-2xl font-normal ">

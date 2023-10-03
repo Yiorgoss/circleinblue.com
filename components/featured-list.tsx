@@ -20,12 +20,12 @@ export default function FeaturedList({
   const data = React.use(dataPromise);
   if (!data?.length) return;
   return (
-    <div className="container mx-auto ">
-      <Card className=" rounded-none border-0 bg-inherit shadow-none outline-0 ">
+    <div className="md:container mx-0 mr-auto md:mx-auto ">
+      <Card className=" rounded-none px-0 border-0 bg-inherit shadow-none outline-0 ">
         <CardContent className="flex w-full justify-between gap-8 overflow-x-auto md:justify-center  md:gap-16">
           {data.slice(0, 3).map((item, i) => (
             <Link href={`${sitemap.artists}/${item.url}`} key={i}>
-              <CardContent className="h-full w-1/2 min-w-[300px] overflow-hidden p-0">
+              <CardContent className="h-full w-1/2 min-w-[300px] overflow-auto md:overflow-hidden p-0">
                 <Image
                   className=""
                   src={item.image_url}
@@ -37,10 +37,10 @@ export default function FeaturedList({
             </Link>
           ))}
         </CardContent>
-        <CardHeader className="mx-auto w-1/2">
+        <CardHeader className="mx-auto w-full md:w-1/2">
           <Separator className="my-6" />
           <Button variant="outline" size="xl2" className="mx-auto">
-            <Link href={sitemap.artists}>Meet Our Artists</Link>
+            <Link className="w-full" href={sitemap.artists}>Meet Our Artists</Link>
           </Button>
         </CardHeader>
       </Card>

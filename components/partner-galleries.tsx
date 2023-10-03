@@ -1,17 +1,15 @@
 import Link from "next/link";
-import Image from "next/image";
 import * as React from "react";
 
 import { Button } from "@components/ui/button";
 import { Separator } from "@components/ui/separator";
 import { Carousel } from "@components/ui/carousel";
-import { Icons } from "@components/icons";
 
 import { sitemap } from "@config/site";
 
 export default function PartnerGalleries({ partners }: { partners: string[] }) {
   return (
-    <div className=" grid grid-cols-2 border-y border-primary">
+    <div className=" grid grid-col-1 md:grid-cols-2 border-y mb-10 border-primary">
       <div className="h-[500px]">
         <Carousel data={partners} />
       </div>
@@ -22,7 +20,7 @@ export default function PartnerGalleries({ partners }: { partners: string[] }) {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <Separator className="mx-auto mb-8 w-1/2 " />
+        <Separator className="mx-auto mb-8 w-4/5 md:w-1/2 " />
         <Link className="mx-auto" href={sitemap.galleries}>
           <Button
             variant="outline"

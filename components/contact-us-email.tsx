@@ -8,9 +8,9 @@ interface EmailTextProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const EmailText = ({ children, float, email }: EmailTextProps) => {
   const floatClass = new Map<string, string>([
-    ["left", "justify-left"],
-    ["right", "justify-end"],
-    ["center", "justify-center"],
+    ["left", "justify-start"],
+    ["right", "justify-start md:justify-end"],
+    ["center", "justify-start md:justify-center"],
   ]);
   return (
     <div>
@@ -19,7 +19,7 @@ const EmailText = ({ children, float, email }: EmailTextProps) => {
         className={`flex items-center ${floatClass.get(float)}`}
         href={`mailto:${email}`}
       >
-        <Icons.mail className="k-8 mr-2 h-8" />
+        <Icons.mail className="mr-2 h-8 w-8" />
         <div className="">{email}</div>
       </Link>
     </div>
@@ -44,18 +44,18 @@ const EmailSection = ({
   }
   if (name == "partnerships") {
     children = (
-      <div className="text-center text-lg">
+      <div className="text-left text-lg md:text-center">
         To express your interest as a Partner, or Gallery, reach us at
       </div>
     );
   }
   if (name == "sales") {
     children = (
-      <div className="text-center text-lg">
+      <div className="text-left text-lg md:text-center">
         <p className="mt-2 text-xl">
           Interested in purchasing a piece of artwork?
         </p>
-        <p className="my-2">Let’s set up an appointment via phone,</p>
+        <p className="mt-2">Let’s set up an appointment via phone,</p>
         <p>zoom or even in person at</p>
       </div>
     );

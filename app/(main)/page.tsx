@@ -5,10 +5,6 @@ import FeaturedList from "@components/featured-list";
 import LetsChat from "@components/lets-chat";
 import PartnerGalleries from "@components/partner-galleries";
 
-import { Skeleton } from "@components/ui/skeleton";
-
-import { getFeaturedProducts } from "@lib/medusa";
-
 import { Artist } from "types";
 import mockArtists from "@data/mock-artist";
 
@@ -26,7 +22,7 @@ export default function Home() {
 
   return (
     <div className="mx-auto">
-      <div className="h-[calc(100vh-100px)] pb-20">
+      <div className="w-full h-full md:h-[calc(100vh-100px)] pb-20">
         <ImageTextSplit />
       </div>
       <div className="">

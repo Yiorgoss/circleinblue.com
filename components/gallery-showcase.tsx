@@ -12,11 +12,11 @@ export default function GalleryShowcase({
   return (
     <div
       className={`${
-        left && "flex-row-reverse"
-      } flex h-[400px] w-full items-center justify-center border-y border-primary bg-background`}
+        left && "md:flex-row-reverse"
+      } flex h-full md:flex-row pt-10 md:pt-0 md:h-[400px] w-full flex-col items-center justify-center border-y border-primary bg-background`}
     >
       <Image
-        className="h-full w-1/3 p-10"
+        className="h-full w-full p-0 md:w-1/3 md:p-10"
         src={gallery.image}
         alt="Gallery Image"
         width={300}

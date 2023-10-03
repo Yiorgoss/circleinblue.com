@@ -7,7 +7,7 @@ export default function ContactUs() {
       <h1 className="border-b border-primary bg-secondary-secondary py-10 text-center text-5xl">
         Contact Us
       </h1>
-      <div className="grid h-[600px] w-full grid-cols-2 border-b border-primary">
+      <div className="grid h-full md:h-[600px] w-full grid-cols-1 md:grid-cols-2 border-b border-primary">
         <div className="flex flex-col justify-around bg-[#150F41]">
           <h3 className="mx-10 text-center text-6xl text-secondary">
             We&lsquo;d love to hear from you

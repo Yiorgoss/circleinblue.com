@@ -1,3 +1,6 @@
+optimize for moobile
+Transitions
+Framer Motion
   change blue color to that of teh footer
   landing page first hero picture and side info fit whole page
   button- maybe remove fill and add bold stroke instead over hover

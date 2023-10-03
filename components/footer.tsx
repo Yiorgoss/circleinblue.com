@@ -18,12 +18,12 @@ const LeftSide = ({
   nav: { title: string; href: string }[];
 }) => {
   return (
-    <div className="grid grid-cols-2 bg-secondary-secondary px-10 pt-10">
-      <div className="mx-auto flex flex-col">
+    <div className="grid grid-cols-2 bg-secondary-secondary px-10 pt-0 md:pt-10">
+      <div className="mx-auto flex flex-col py-6 md:py-0">
         <h2 className="w-fit border-b border-primary px-3 py-2 text-lg font-medium">
           Find Us
         </h2>
-        <ul className="mt-3">
+        <ul className="mt-4 ">
           {socials.map(({ title, href }, i) => (
             <li className="pt-4" key={i}>
               <Link href={href}>{SocialIcon.get(title)}</Link>
@@ -31,13 +31,13 @@ const LeftSide = ({
           ))}
         </ul>
       </div>
-      <div className="mx-auto flex flex-col">
+      <div className="mx-auto flex flex-col py-6 md:py-0">
         <h2 className="w-fit border-b border-primary px-3 py-2 text-lg font-medium">
           Helpful Links
         </h2>
-        <ul className="mt-4">
+        <ul className="mt-4 text-base md:text-lg">
           {nav.map(({ title, href }, i) => (
-            <li className="" key={i}>
+            <li className="pt-4" key={i}>
               <Link href={href}>{title}</Link>
             </li>
           ))}
@@ -58,7 +58,7 @@ export function Footer({
   return (
     <div className="">
       <DoubleDivider axis="horizontal" />
-      <div className="grid grid-cols-2 gap-px border-b border-primary bg-primary">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-px border-b border-primary bg-primary">
         <LeftSide socials={items.socials} nav={items.nav} />
         <EmailSignup />
       </div>

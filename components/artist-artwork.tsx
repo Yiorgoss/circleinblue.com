@@ -23,9 +23,12 @@ export default function ArtistArtwork({
         <CardHeader className="py-10 text-center text-4xl">
           Available Artwork
         </CardHeader>
-        <CardContent className="flex w-full justify-between gap-8 overflow-x-auto md:justify-center  md:gap-16">
+        <CardContent className="flex w-full justify-between gap-8 overflow-x-auto md:justify-center md:gap-16">
           {artwork.map((item, i) => (
-            <CardContent className="h-full overflow-hidden p-0" key={i}>
+            <CardContent
+              className="overlow-auto h-full min-w-[250px] p-0"
+              key={i}
+            >
               <Image
                 className="object-cover"
                 src={item.image_url}

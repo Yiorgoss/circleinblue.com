@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Card, CardHeader, CardContent, CardFooter } from "@components/ui/card";
 import DoubleDivider from "@components/ui/double-divider";
 
 import { Artist } from "types";
@@ -28,9 +27,9 @@ const GridItem = ({ item }: { item: Artist }) => {
 };
 export default function GridLayout({ data }: { data: Artist[] }) {
   return (
-    <div className="flex flex-wrap justify-around py-14">
+    <div className="flex flex-col justify-around py-14 md:flex-wrap">
       {data.map((item, i) => (
-        <div className="my-14 w-1/3 " key={i}>
+        <div className="my-6 w-full md:my-14 md:w-1/3 " key={i}>
           <GridItem item={item} />
         </div>
       ))}

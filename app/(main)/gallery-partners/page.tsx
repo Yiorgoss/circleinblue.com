@@ -1,10 +1,5 @@
-import Image from "next/image";
 import * as React from "react";
 
-import { Button } from "@components/ui/button";
-import { Separator } from "@components/ui/separator";
-import { Carousel } from "@components/ui/carousel";
-import { Icons } from "@components/icons";
 import GalleryShowcase from "@components/gallery-showcase";
 
 const galleries = [
@@ -42,7 +37,7 @@ export default function GalleryPartners() {
       </h1>
       <div className="py-10 bg-secondary-secondary ">
         {galleries.map((gallery, i) => (
-          <div className="py-10 py-6" key={i}>
+          <div className="py-10 " key={i}>
             <GalleryShowcase left={i % 2 == 1} gallery={gallery} />
           </div>
         ))}

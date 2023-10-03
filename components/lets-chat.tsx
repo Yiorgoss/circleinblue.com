@@ -7,8 +7,7 @@ import { sitemap } from "@config/site";
 
 export default function LetsChat() {
   return (
-    <div className="bg-secondary-secondary">
-      <Separator className="mt-8" />
+    <div className="bg-secondary-secondary border-y mb-10 py-10 border-primary">
       <div className="container mx-auto text-center">
         <div className="p-10">
           <p className="text-xl">
@@ -26,7 +25,6 @@ export default function LetsChat() {
           </Link>
         </div>
       </div>
-      <Separator className="mb-14" />
     </div>
   );
 }

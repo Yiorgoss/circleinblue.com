@@ -8,13 +8,10 @@ import Image from "next/image"
 import { NavItem } from "types";
 import { CircularText } from "@components/circular-text";
 import { Icons } from "@components/icons";
-import ActiveLink from "@components/ui/active-link";
-import { Button } from "@components/ui/button";
 import {
   Dialog,
   DialogTrigger,
   DialogContent,
-  DialogHeader,
 } from "@components/ui/dialog";
 
 export function MainNav({ items }: { items: NavItem[] }) {
@@ -25,7 +22,7 @@ export function MainNav({ items }: { items: NavItem[] }) {
       <div className="my-auto ml-4 md:ml-16 flex justify-center items-center ">
         <Link href="/"><Image src="/images/logo.png" alt="circle in blue logo" height={80} width={80} /></Link>
       </div>
-      <div className="my-auto text-3xl font-black">Circle In Blue</div>
+      <div className="my-auto text-xl md:text-3xl font-black">Circle In Blue</div>
 
       <Dialog open={menuOpen} onOpenChange={setMenuOpen}>
         <DialogTrigger className="mr-4 md:mr-14">

@@ -11,7 +11,7 @@ export default function ImageTextSplit() {
     <div className="mt-10 h-full w-full flex-col md:flex-row justify-center border-y-[1px] border-primary md:flex ">
       <div className="container mx-auto relative m-0 h-full w-full overflow-hidden p-0 md:pl-10 md:w-2/3 md:pr-6">
         <Image
-          className="w-full h-full object-cover"
+          className="w-full h-1/2 md:h-full object-cover"
           width={600}
           height={300}
           src="/images/landing-1.jpg"
@@ -25,7 +25,7 @@ export default function ImageTextSplit() {
             Lorem ipsum dolor sit amet, consectetur magna aliqua. Ut enim ad
             minim veniam.
           </div>
-          <div className="flex flex-wrap gap-8 ">
+          <div className="flex flex-wrap gap-8 pb-6">
             <Separator className="bg-primary" />
             <Link className="mx-auto" href={sitemap.aboutUs}>
               <Button variant="outline" size="lg">

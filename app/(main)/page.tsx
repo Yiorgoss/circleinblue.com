@@ -1,9 +1,10 @@
 import { Suspense } from "react";
+import dynamic from "next/dynamic"
 
 import ImageTextSplit from "@components/image-text-split";
-import FeaturedList from "@components/featured-list";
-import LetsChat from "@components/lets-chat";
-import PartnerGalleries from "@components/partner-galleries";
+const FeaturedList = dynamic(() => import('../../components/featured-list'))
+const LetsChat= dynamic(() => import('../../components/lets-chat'))
+const PartnerGalleries = dynamic(() => import('../../components/partner-galleries'))
 
 import { Artist } from "types";
 import mockArtists from "@data/mock-artist";

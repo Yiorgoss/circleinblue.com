@@ -3,7 +3,6 @@
 import Image from "next/image";
 import * as React from "react";
 
-import { Button } from "@components/ui/button";
 import { Icons } from "@components/icons";
 
 const Carousel = ({ data }: { data: string[] }) => {
@@ -24,7 +23,7 @@ const Carousel = ({ data }: { data: string[] }) => {
 
   return (
     <div className="relative">
-      <Icons.arrowLeft
+      <Icons.chevronLeft
         className="absolute inset-y-0 left-0 z-20 my-auto h-16 w-16 cursor-pointer"
         onClick={() => cycleImages("left")}
       />
@@ -49,7 +48,7 @@ const Carousel = ({ data }: { data: string[] }) => {
         })}
       </div>
 
-      <Icons.arrowRight
+      <Icons.chevronRight
         className="absolute inset-y-0 right-0 z-20 my-auto h-16 w-16 cursor-pointer "
         onClick={() => cycleImages("right")}
       />

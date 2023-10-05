@@ -1,9 +1,9 @@
 import {
   X,
   Menu,
-  ArrowLeft,
   ArrowUp,
-  ArrowRight,
+  ChevronRight,
+  ChevronLeft,
   Mail,
   Linkedin,
   Instagram,
@@ -12,14 +12,13 @@ import {
 } from "lucide-react";
 
 export type Icon = LucideIcon;
-
 export const Icons = {
   instagram: Instagram,
   linkedIn: Linkedin,
   close: X,
   menu: Menu,
-  arrowLeft: ArrowLeft,
-  arrowRight: ArrowRight,
+  chevronLeft: ChevronLeft,
+  chevronRight: ChevronRight,
   arrowUp: ArrowUp,
   mail: Mail,
   nextjs: (props: LucideProps) => (

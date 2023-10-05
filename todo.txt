@@ -1,4 +1,21 @@
-optimize for moobile
+
+Landing Page 
+Make hero area end right under the Read about our Story button’s border.
+  Should we put < > on the Artists carousel? Or maybe instead their name on the picture and have the picture have less opacity?
+  Less text for under the Galleries section? Maybe middle centred?
+  Meet Our Artists Page
+  Put text closer to the two lines that are under the picture of the Artist.
+  Our Galleries Page
+  Is the Header a bit too large of font?
+  Title of Gallery on the picture itself? Or maybe picture on top, Name of Title of Gallery on left and text about it on t  he right?
+
+Our Story Page
+Who we Are area to end right under the border when we arrive on page.
+  Our Founder section text to be middle centered?
+  Join Our Community section, have the text and the button closer together. 
+
+  optimize for moobile
+reduce-bundle-size
 Transitions
 Framer Motion
   change blue color to that of teh footer

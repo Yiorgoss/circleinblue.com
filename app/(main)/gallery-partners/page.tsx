@@ -32,7 +32,7 @@ const galleries = [
 export default function GalleryPartners() {
   return (
     <div className="pt-10">
-      <h1 className="border-y border-primary bg-secondary-secondary py-10 text-center text-5xl">
+      <h1 className="border-y border-primary bg-secondary-secondary py-10 text-center text-3xl">
         Our Gallery Partners
       </h1>
       <div className="py-10 bg-secondary-secondary ">

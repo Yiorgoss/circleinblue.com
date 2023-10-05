@@ -16,7 +16,7 @@ const GridItem = ({ item }: { item: Artist }) => {
           width={300}
         />
         <div className="flex flex-col">
-          <div className="mx-auto my-2">
+          <div className="mx-auto -mb-1 mt-2">
             {item.firstName} {item.lastName}
           </div>
           <DoubleDivider className="mx-auto w-3/4" axis="horizontal" />
@@ -27,7 +27,7 @@ const GridItem = ({ item }: { item: Artist }) => {
 };
 export default function GridLayout({ data }: { data: Artist[] }) {
   return (
-    <div className="flex flex-col justify-around py-14 md:flex-wrap">
+    <div className="flex flex-col flex-wrap justify-around py-14 md:flex-row">
       {data.map((item, i) => (
         <div className="my-6 w-full md:my-14 md:w-1/3 " key={i}>
           <GridItem item={item} />

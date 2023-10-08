@@ -6,7 +6,7 @@ export default function WhoWeAre() {
   return (
     <div className="w-full">
       <div className="relative">
-        <div className="grid h-[calc(100vh-100px)] grid-cols-5 md:grid-cols-10">
+        <div className="grid h-full md:h-[calc(100vh-150px)] grid-cols-5 md:grid-cols-10">
           {Array(10)
             .fill(0)
             .map((_, i) => (

@@ -23,9 +23,9 @@ export default function GalleryShowcase({
         height={300}
       />
       <DoubleDivider className="mr-10" axis="vertical" />
-      <div className="flex w-3/4 flex-col justify-center py-10 text-center">
-        <h2 className="text-3xl">{gallery.name}</h2>
-        <p className="p-10 text-lg ">{gallery.description}</p>
+      <div className="flex px-6 md:px-0 flex-col justify-center py-10 text-center">
+        <h2 className="text-3xl pb-5">{gallery.name}</h2>
+        <p className="p-0 md:p-10 text-lg ">{gallery.description}</p>
       </div>
     </div>
   );

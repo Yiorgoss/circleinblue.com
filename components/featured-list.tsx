@@ -33,12 +33,13 @@ export default function FeaturedList({
                   height={300}
                   width={300}
                 />
+                <div className="pt-2 text-center">{item.firstName} {item.lastName}</div>
               </CardContent>
             </Link>
           ))}
         </CardContent>
         <CardHeader className="mx-auto w-full md:w-1/2">
-          <Separator className="my-6" />
+          <Separator className="mb-6" />
           <Button variant="outline" size="xl2" className="mx-auto">
             <Link className="w-full" href={sitemap.artists}>Meet Our Artists</Link>
           </Button>

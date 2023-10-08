@@ -37,7 +37,7 @@ export default function ArtistArtwork({
                 width={300}
               />
               <div className="">
-                <div className="pt-12">{item.name}</div>
+                <div className="pt-12 text-center">{item.name}</div>
                 <DoubleDivider axis="horizontal" />
                 <div className="ml-auto w-fit border-b border-primary pt-2 text-right text-base">
                   ${item.price}

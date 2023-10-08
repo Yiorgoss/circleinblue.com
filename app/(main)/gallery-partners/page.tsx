@@ -7,25 +7,25 @@ const galleries = [
     name: "Domus Gallery",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    image: "https://placebear.com/400/400",
+    image: "/images/gallery-1.jpg",
   },
   {
     name: "Domus Gallery",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    image: "https://placebear.com/400/400",
+    image: "/images/gallery-3.jpg",
   },
   {
     name: "Domus Gallery",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    image: "https://placebear.com/400/400",
+    image: "/images/gallery-2.jpg",
   },
   {
     name: "Domus Gallery",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    image: "https://placebear.com/400/400",
+    image: "/images/gallery-3.jpg",
   },
 ];
 

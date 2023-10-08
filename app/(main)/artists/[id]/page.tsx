@@ -30,8 +30,10 @@ export default function ArtistPage() {
         <ArtistArtwork artwork={artist.artwork} />
       </div>
       <p className="mx-auto border-t border-primary py-24 text-center text-2xl tracking-wider">
+        &ldquo;
         Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
         cillum sint consectetur cupidatat
+        &rdquo;
       </p>
     </div>
   );

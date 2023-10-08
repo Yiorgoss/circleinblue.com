@@ -16,8 +16,8 @@ export default function WhoWeAre() {
               ></div>
             ))}
         </div>
-        <div className="inset-0 flex flex-col h-full md:h-[calc(100vh-150px)] py-10 items-start justify-center md:items-center">
-          <h1 className="ml-0 text-6xl font-semibold md:ml-[-300px]">
+        <div className="inset-0 flex flex-col h-screen md:h-[calc(100vh-150px)] py-10 items-start justify-center md:items-center">
+          <h1 className="ml-0 text-6xl pt-10 md:pt-0 font-semibold md:ml-[-300px]">
             Who We Are
           </h1>
           <p className="w-full pl-10 md:w-[500px]">

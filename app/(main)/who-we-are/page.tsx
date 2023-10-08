@@ -6,7 +6,7 @@ export default function WhoWeAre() {
   return (
     <div className="w-full">
       <div className="relative">
-        <div className="grid h-full md:h-[calc(100vh-150px)] grid-cols-5 md:grid-cols-10">
+        <div className="absolute inset-0 -z-10 grid grid-cols-5 md:grid-cols-10">
           {Array(10)
             .fill(0)
             .map((_, i) => (
@@ -16,7 +16,7 @@ export default function WhoWeAre() {
               ></div>
             ))}
         </div>
-        <div className="absolute inset-0 flex flex-col items-start justify-center md:items-center">
+        <div className="inset-0 flex flex-col h-full md:h-[calc(100vh-150px)] py-10 items-start justify-center md:items-center">
           <h1 className="ml-0 text-6xl font-semibold md:ml-[-300px]">
             Who We Are
           </h1>

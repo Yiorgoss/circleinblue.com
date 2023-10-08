@@ -13,19 +13,22 @@ const artists = [
         name: "Art 1 Test 1",
         description:
           "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-        image_url:'https://placebear.com/400/400', price: 1000,
+        image_url: "/images/artwork-1.jpg",
+        price: 1000,
       },
       {
         name: "Art 2 Test 1",
         description:
           "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-        image_url:'https://placebear.com/400/400', price: 1000,
+        image_url: "/images/artwork-2.jpg",
+        price: 1000,
       },
       {
         name: "Art 3 Test 1",
         description:
           "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-        image_url:'https://placebear.com/400/400', price: 1000,
+        image_url: "/images/artwork-3.jpg",
+        price: 1000,
       },
     ],
   },
@@ -43,19 +46,22 @@ const artists = [
         name: "Art 1 Test 2",
         description:
           "test test test testtest test test testtest test test testtest test test testtest test test test",
-        image_url:'https://placebear.com/400/400', price: 1000,
+        image_url: "/images/artwork-1.jpg",
+        price: 1000,
       },
       {
         name: "Art 2 Test 2",
         description:
           "test test test testtest test test testtest test test testtest test test testtest test test test",
-        image_url:'https://placebear.com/400/400', price: 1000,
+        image_url: "/images/artwork-2.jpg",
+        price: 1000,
       },
       {
         name: "Art 3 Test 2",
         description:
           "test test test testtest test test testtest test test testtest test test testtest test test test",
-        image_url:'https://placebear.com/400/400', price: 1000,
+        image_url: "/images/artwork-3.jpg",
+        price: 1000,
       },
     ],
   },
@@ -73,19 +79,22 @@ const artists = [
         name: "Art 1 Test 3",
         description:
           "test test test testtest test test testtest test test testtest test test testtest test test test",
-        image_url:'https://placebear.com/400/400', price: 1000,
+        image_url: "/images/artwork-2.jpg",
+        price: 1000,
       },
       {
         name: "Art 2 Test 3",
         description:
           "test test test testtest test test testtest test test testtest test test testtest test test test",
-        image_url:'https://placebear.com/400/400', price: 1000,
+        image_url: "/images/artwork-1.jpg",
+        price: 1000,
       },
       {
         name: "Art 3 Test 3",
         description:
           "test test test testtest test test testtest test test testtest test test testtest test test test",
-        image_url:'https://placebear.com/400/400', price: 1000,
+        image_url: "/images/artwork-3.jpg",
+        price: 1000,
       },
     ],
   },

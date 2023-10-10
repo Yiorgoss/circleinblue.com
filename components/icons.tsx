@@ -7,12 +7,14 @@ import {
   Mail,
   Linkedin,
   Instagram,
+  ExternalLink,
   type LucideIcon,
   type LucideProps,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
 export const Icons = {
+  externalLink: ExternalLink,
   instagram: Instagram,
   linkedIn: Linkedin,
   close: X,

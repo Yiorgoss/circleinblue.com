@@ -9,8 +9,8 @@ interface EmailTextProps extends React.HTMLAttributes<HTMLDivElement> {
 const EmailText = ({ children, float, email }: EmailTextProps) => {
   const floatClass = new Map<string, string>([
     ["left", "justify-start"],
-    ["right", "justify-start md:justify-end"],
-    ["center", "justify-start md:justify-center"],
+    ["right", "justify-start "],
+    ["center", "justify-start"],
   ]);
   return (
     <div>
@@ -44,14 +44,14 @@ const EmailSection = ({
   }
   if (name == "partnerships") {
     children = (
-      <div className="text-left text-lg md:text-center">
+      <div className="text-left text-lg">
         To express your interest as a Partner, or Gallery, reach us at
       </div>
     );
   }
   if (name == "sales") {
     children = (
-      <div className="text-left text-lg md:text-center">
+      <div className="text-left text-lg">
         <p className="mt-2 text-xl">
           Interested in purchasing a piece of artwork?
         </p>

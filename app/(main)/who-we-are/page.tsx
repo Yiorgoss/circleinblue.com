@@ -34,14 +34,17 @@ export default function WhoWeAre() {
         </div>
       </div>
       <div className="h-16 border-t border-primary"></div>
-      <div className="border-y border-primary bg-secondary-secondary py-20 text-center">
+      <div className="border-y border-primary bg-secondary-secondary py-20 px-2 text-left ">
         <h2 className="text-5xl font-medium">Our Mission</h2>
         <p className="mx-auto mt-10 w-3/4 xl:w-[800px]">
-          CircleInBlue&rsquo;s mission is to discover and partner with a diverse
+          CircleInBlue’s mission is to discover and partner with a diverse
           spectrum of artists, ensuring that their remarkable artworks receive
           the recognition they deserve, captivating art collectors from all
           walks of life, and ultimately becoming prized additions to their
-          collections.
+          collections. tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu
         </p>
       </div>
 
@@ -53,26 +56,27 @@ export default function WhoWeAre() {
           <div className="my-6 h-full ">
             <Image
               className=""
-              src="https://placebear.com/400/400"
+              src="/images/founder.jpeg"
               alt="picture"
-              height={300}
-              width={300}
+              height={700}
+              width={400}
             />
           </div>
-          <p className="w-full text-center md:w-1/4">
+          <p className="w-full text-center px-2 md:w-1/4">
             Randa, the Founder of CircleInBlue, boasts a rich background as an
             Art consultant, previously splitting her time between Paris and
             London while collaborating with prestigious auction houses and
             galleries. Her primary mission has always been to unearth emerging
-            artists and propel them onto the global stage. Commencing her career
-            in the realm of Modern Art and Middle Eastern Art, Randa has gained
-            significant recognition for her role in promoting Lebanese artists
-            within the Greek gallery scene and elevating Greek artists to
-            international prominence. <br />
-            Speaking five languages - English, Greek, Arabic, French, and
-            Italian - Randa provides invaluable counsel to high net worth
-            individuals and foundations seeking to make informed investments in
-            Modern Art, Middle Eastern Art, and Islamic Art.
+            artists and propel them onto the global stage. Commencing her
+            career in the realm of Modern Art and Middle Eastern Art, Randa
+            has gained significant recognition for her role in promoting
+            Lebanese artists within the Greek gallery scene and elevating
+            Greek artists to international prominence.
+            <br />
+            Speaking five languages — English, Greek, Arabic, French, and
+            Italian — Randa provides invaluable counsel to high net worth
+            individuals and foundations seeking to make informed investments
+            in Modern Art, Middle Eastern Art, and Islamic Art.
           </p>
         </div>
       </div>
@@ -94,10 +98,11 @@ export default function WhoWeAre() {
       </div>
       <div className="container mx-auto flex flex-col items-center justify-center py-10 md:flex-row">
         <Image
-          src="/images/founder.jpg"
+          className="object-cover"
+          src="/images/artist.webp"
           alt="artist portrait"
-          height={500}
-          width={300}
+          height={600}
+          width={400}
         />
         <div className="ml-0 flex w-full flex-col items-center justify-around md:ml-10 md:w-[400px]">
           <h3 className="py-10 text-5xl font-medium md:py-0">The Artists</h3>
@@ -114,7 +119,7 @@ export default function WhoWeAre() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center border-y border-primary bg-secondary-secondary py-20 text-center">
+      <div className="flex flex-col items-center justify-center border-y border-primary bg-secondary-secondary py-20 text-left px-2">
         <h3 className="text-5xl font-medium">Join Our Community</h3>
         <p className="text-balance mb-6 mt-10 md:mb-6">
           Keen on being represented?

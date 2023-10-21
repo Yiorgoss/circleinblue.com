@@ -24,11 +24,12 @@ export default function WhoWeAre() {
             Who We Are
           </h1>
           <p className="w-full pl-10 md:w-[500px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu
+            We are a premier online art gallery showcasing talented artists
+            hailing from the vibrant Mediterranean and Middle Eastern region.
+            Through strategic partnerships with esteemed physical art galleries,
+            we have perfected a collaborative model to showcase the exquisite
+            creations of our portfolio artists to a large audience of
+            collectors.
           </p>
         </div>
       </div>
@@ -36,45 +37,54 @@ export default function WhoWeAre() {
       <div className="border-y border-primary bg-secondary-secondary py-20 text-center">
         <h2 className="text-5xl font-medium">Our Mission</h2>
         <p className="mx-auto mt-10 w-3/4 xl:w-[800px]">
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu
+          CircleInBlue&rsquo;s mission is to discover and partner with a diverse
+          spectrum of artists, ensuring that their remarkable artworks receive
+          the recognition they deserve, captivating art collectors from all
+          walks of life, and ultimately becoming prized additions to their
+          collections.
         </p>
       </div>
 
       <div className="py-6 md:py-10 ">
-          <h2 className="pt-6 pb-10 text-center text-5xl font-medium md:pt-0 ">
-            Our 
-            Founder
-          </h2>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-x-20">
-        <div className="my-6 h-full ">
-          <Image
-            className=""
-            src="https://placebear.com/400/400"
-            alt="picture"
-            height={300}
-            width={300}
-          />
-        </div>
-        <p className="w-full text-center md:w-1/4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu
-        </p>
+        <h2 className="pb-10 pt-6 text-center text-5xl font-medium md:pt-0 ">
+          Our Founder
+        </h2>
+        <div className="flex flex-col items-center justify-center gap-x-20 md:flex-row">
+          <div className="my-6 h-full ">
+            <Image
+              className=""
+              src="https://placebear.com/400/400"
+              alt="picture"
+              height={300}
+              width={300}
+            />
+          </div>
+          <p className="w-full text-center md:w-1/4">
+            Randa, the Founder of CircleInBlue, boasts a rich background as an
+            Art consultant, previously splitting her time between Paris and
+            London while collaborating with prestigious auction houses and
+            galleries. Her primary mission has always been to unearth emerging
+            artists and propel them onto the global stage. Commencing her career
+            in the realm of Modern Art and Middle Eastern Art, Randa has gained
+            significant recognition for her role in promoting Lebanese artists
+            within the Greek gallery scene and elevating Greek artists to
+            international prominence. <br />
+            Speaking five languages - English, Greek, Arabic, French, and
+            Italian - Randa provides invaluable counsel to high net worth
+            individuals and foundations seeking to make informed investments in
+            Modern Art, Middle Eastern Art, and Islamic Art.
+          </p>
         </div>
       </div>
       <div className="border-y border-primary bg-secondary-secondary py-20 text-center">
-        <h3 className="text-5xl font-medium">Our Collaborations</h3>
+        <h3 className="text-5xl font-medium">Our Partnerships</h3>
         <p className="container mb-6 mt-10 w-full md:w-[800px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum
+          We collaborate with brands, galleries, communities, and cultural
+          heritage foundations that are dedicated to leaving a lasting mark on
+          the art world, enriching it, and expanding opportunities for emerging
+          artists. Our partners come from diverse global and regional
+          backgrounds, all sharing a deep commitment to the values of art and
+          creativity.
         </p>
         <Link href={sitemap.galleries}>
           <Button variant="outline" className="mt-8">
@@ -84,7 +94,7 @@ export default function WhoWeAre() {
       </div>
       <div className="container mx-auto flex flex-col items-center justify-center py-10 md:flex-row">
         <Image
-          src="https://placebear.com/300/500"
+          src="/images/founder.jpg"
           alt="artist portrait"
           height={500}
           width={300}
@@ -92,10 +102,10 @@ export default function WhoWeAre() {
         <div className="ml-0 flex w-full flex-col items-center justify-around md:ml-10 md:w-[400px]">
           <h3 className="py-10 text-5xl font-medium md:py-0">The Artists</h3>
           <p className="mb-6 mt-0 md:mt-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Our artists form a vibrant community, representing various cultural
+            backgrounds, drawing inspiration from the constantly evolving global
+            landscape. Their artworks serve as a profound expression of their
+            enduring value and creativity.
           </p>
           <Link href={sitemap.artists}>
             <Button variant="outline" size="lg">
@@ -107,7 +117,7 @@ export default function WhoWeAre() {
       <div className="flex flex-col items-center justify-center border-y border-primary bg-secondary-secondary py-20 text-center">
         <h3 className="text-5xl font-medium">Join Our Community</h3>
         <p className="text-balance mb-6 mt-10 md:mb-6">
-          Interested in being a featured <br /> Artist on our page?
+          Keen on being represented?
         </p>
         <Link href={sitemap.contactUs}>
           <Button variant="outline" size="lg">

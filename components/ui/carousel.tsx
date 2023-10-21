@@ -18,7 +18,6 @@ const Carousel = ({ data }: { data: string[] }) => {
     } else {
       setCurr((curr + 1) % data.length);
     }
-    console.log(curr);
   };
 
   return (
@@ -28,24 +27,21 @@ const Carousel = ({ data }: { data: string[] }) => {
         onClick={() => cycleImages("left")}
       />
       <div className="relative h-[500px] w-full overflow-hidden">
-        {data.map((src, i) => {
-          return (
-            <div
-              className={`${
-                curr === i ? "relative" : "hidden"
+        {data.map((image, i) => (
+          <div
+            className={`${curr === i ? "relative" : "hidden"
               } h-full w-full overflow-hidden bg-blue-300`}
-              key={i}
-            >
-              <Image
-                className="h-full w-full object-cover"
-                src={src}
-                alt={`carousel-image-${i}`}
-                height={400}
-                width={400}
-              />
-            </div>
-          );
-        })}
+            key={i}
+          >
+            <Image
+              className="h-full w-full object-cover"
+              src={image}
+              alt={`carousel-image-${i}`}
+              height={400}
+              width={400}
+            />
+          </div>
+        ))}
       </div>
 
       <Icons.chevronRight

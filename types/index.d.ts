@@ -4,14 +4,24 @@ export type artwork = {
   price: number;
 };
 
+export type Gallery = {
+  name: string;
+  description: string;
+  externalUrl: string;
+  image: string;
+
+}
+
 export type Artist = {
   firstName: string;
   lastName: string;
-  image_url: string;
-  description_1: string;
-  description_2: string;
-  artwork: Artwork;
+  imageUrl: string;
+  description: string;
   url: string;
+  externalUrl: {
+    name: string;
+    url: string;
+  };
 };
 
 export type NavItem = {

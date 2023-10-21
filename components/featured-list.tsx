@@ -25,10 +25,10 @@ export default function FeaturedList({
         <CardContent className="flex w-full justify-between gap-8 overflow-x-auto md:justify-center  md:gap-16">
           {data.slice(0, 3).map((item, i) => (
             <Link href={`${sitemap.artists}/${item.url}`} key={i}>
-              <CardContent className="h-full w-1/2 min-w-[300px] overflow-auto p-0 md:overflow-hidden">
+              <CardContent className="overflow-y-hidden h-full w-1/2 min-w-[300px] overflow-x-auto p-0 md:overflow-hidden">
                 <Image
-                  className=""
-                  src={item.image_url}
+                  className="h-[300px] object-cover border-primary border"
+                  src={item.imageUrl}
                   alt={`${item.firstName} ${item.lastName} profile image`}
                   height={300}
                   width={300}

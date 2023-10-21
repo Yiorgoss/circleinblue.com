@@ -1,5 +1,6 @@
+
 import GridLayout from "@components/grid-layout";
-import data from "@data/mock-artist";
+import { artists } from "@data/artists";
 
 export default function Artists() {
   return (
@@ -10,7 +11,7 @@ export default function Artists() {
         </p>
       </div>
       <div className="">
-        <GridLayout data={...data} />
+        <GridLayout data={...artists} />
       </div>
     </div>
   );

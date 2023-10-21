@@ -1,24 +1,17 @@
+import Image from "next/image"
+
 import ContactUsEmail from "@components/contact-us-email";
 import { contactEmails } from "@config/site";
 
 export default function ContactUs() {
   return (
-    <div>
+    <div className="mb-10">
       <h1 className="border-b border-primary bg-secondary-secondary py-10 text-center text-5xl">
         Contact Us
       </h1>
-      <div className="grid h-full md:h-[600px] w-full grid-cols-1 md:grid-cols-2 border-b border-primary">
-        <div className="flex flex-col justify-around bg-[#150F41]">
-          <h3 className="mx-10 text-center text-6xl text-secondary">
-            We&lsquo;d love to hear from you
-          </h3>
-          <div className="flex justify-center border-secondary">
-            <div className=" aspect-square w-full rounded-full border"></div>
-            <div className="ml-[-15%] aspect-square w-full rounded-full border border-dashed"></div>
-            <div className="ml-[-15%] aspect-square w-full rounded-full border"></div>
-          </div>
-        </div>
-        <div className="flex flex-col items-center justify-center border-l border-primary">
+      <div className="grid h-full w-full grid-cols-1 md:grid-cols-2 border-b border-primary">
+        <Image className="object-cover max-w-[600px] max-h-[1200px] border-primary border-l w-full h-full justify-self-end" src="/images/contact.png" alt="contact us allt" height={600} width={300} />
+        <div className="flex flex-col items-center justify-center  border-primary">
           <ContactUsEmail emails={contactEmails} />
         </div>
       </div>

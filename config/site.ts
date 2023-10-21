@@ -1,7 +1,6 @@
 export const siteConfig = {
   name: "Circle In Blue",
-  description:
-    "Helping Artists connect with Collectors",
+  description: "Helping Artists connect with Collectors",
   url: "https://www.circleinblue.com",
   ogImage: "https://www.circleinblue.com/opengraph-image.png",
 };
@@ -24,8 +23,11 @@ export const mainNav = [
 ];
 export const footer = {
   socials: [
-    { title: "instagram", href: "instagram-url" },
-    { title: "linkedin", href: "linkedin-url" },
+    {
+      title: "instagram",
+      href: "https://www.instagram.com/circle_in_blue/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr",
+    },
+    { title: "linkedin", href: "#" },
   ],
   nav: [
     { title: "Privacy", href: sitemap.privacy },

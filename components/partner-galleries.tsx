@@ -6,12 +6,18 @@ import { Separator } from "@components/ui/separator";
 import { Carousel } from "@components/ui/carousel";
 
 import { sitemap } from "@config/site";
+import { Gallery } from "types"
 
-export default function PartnerGalleries({ partners }: { partners: string[] }) {
+export default function PartnerGalleries({ galleries }: { galleries: Gallery[] }) {
+
+  const galleryImages = galleries.map(gallery => gallery.image)
+  console.log("arsntaorset")
+  console.log(galleryImages)
+
   return (
     <div className=" grid-col-1 mb-10 grid border-y border-primary md:grid-cols-2">
       <div className="h-[500px]">
-        <Carousel data={partners} />
+        <Carousel data={galleryImages} />
       </div>
       <div className="align-center flex flex-col justify-end bg-secondary-secondary pb-12">
         <p className="p-10 px-14 text-center font-light">

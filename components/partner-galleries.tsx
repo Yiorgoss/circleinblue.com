@@ -11,8 +11,6 @@ import { Gallery } from "types"
 export default function PartnerGalleries({ galleries }: { galleries: Gallery[] }) {
 
   const galleryImages = galleries.map(gallery => gallery.image)
-  console.log("arsntaorset")
-  console.log(galleryImages)
 
   return (
     <div className=" grid-col-1 mb-10 grid border-y border-primary md:grid-cols-2">

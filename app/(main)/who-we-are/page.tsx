@@ -14,7 +14,7 @@ export default function WhoWeAre() {
             .fill(0)
             .map((_, i) => (
               <div
-                className=" border-r-[1px] border-primary opacity-10 last:border-0"
+                className=" border-r border-primary opacity-10 last:border-0"
                 key={i}
               ></div>
             ))}
@@ -62,7 +62,7 @@ export default function WhoWeAre() {
               width={400}
             />
           </div>
-          <p className="w-full text-center px-2 md:w-1/4">
+          <p className="w-full px-2 md:w-1/4">
             Randa, the Founder of CircleInBlue, boasts a rich background as an
             Art consultant, previously splitting her time between Paris and
             London while collaborating with prestigious auction houses and
@@ -72,7 +72,7 @@ export default function WhoWeAre() {
             has gained significant recognition for her role in promoting
             Lebanese artists within the Greek gallery scene and elevating
             Greek artists to international prominence.
-            <br />
+            <span className="py-5 block"></span>
             Speaking five languages — English, Greek, Arabic, French, and
             Italian — Randa provides invaluable counsel to high net worth
             individuals and foundations seeking to make informed investments
@@ -120,7 +120,7 @@ export default function WhoWeAre() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center border-y border-primary bg-secondary-secondary py-20 text-left px-2">
-        <h3 className="text-5xl font-medium">Join Our Community</h3>
+        <h3 className="text-5xl text-center font-medium">Join Our Community</h3>
         <p className="text-balance mb-6 mt-10 md:mb-6">
           Keen on being represented?
         </p>

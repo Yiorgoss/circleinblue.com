@@ -16,15 +16,15 @@ export default function ArtistPage() {
 
   return (
     <div className="">
-      <div className="text-balance relative py-10 ">
-        <h1 className="w-full mx-auto bg-transparent pl-0 py-4 md:py-0 md:pl-10 text-center text-[7vw] leading-none">
+      <div className="text-balance relative py-3 md:py-10 ">
+        <h1 className="w-full mx-auto bg-transparent pl-0 md:py-0 md:pl-10 text-center text-5xl md:text-8xl leading-none">
           {`${artist.firstName}`} {`${artist.lastName}`}
         </h1>
       </div>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 py-10 ">
-        <p className="mx-auto max-w-[400px] self-center text-xl">{artist.description}</p>
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 md:py-10 ">
+        <p className="mx-auto max-w-[400px] pt-6 self-center text-xl">{artist.description}</p>
         <Image
-          className=""
+          className="row-start-1 md:col-start-2 "
           src={artist.imageUrl}
           alt={`${artist.firstName} ${artist.lastName} portrait`}
           height={400}
@@ -32,8 +32,8 @@ export default function ArtistPage() {
         />
       </div>
       <Link href={artist.externalUrl.url}>
-        <div className={`${artist.externalUrl ? 'block' : 'hidden'} flex w-fit mx-auto py-14 text-2xl`}>
-          <p className="hover:underline flex hover:text-blue-600">
+        <div className={`${artist.externalUrl ? 'block' : 'hidden'} flex w-fit mx-auto  py-6 md:py-14 text-lg`}>
+          <p className="hover:underline flex text-blue-600">
             {artist.externalUrl.name}
             <Icons.externalLink />
           </p>
